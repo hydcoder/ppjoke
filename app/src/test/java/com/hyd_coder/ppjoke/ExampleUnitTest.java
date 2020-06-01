@@ -1,4 +1,4 @@
-package com.example.ppjoke;
+package com.hyd_coder.ppjoke;
 
 import org.junit.Test;
 

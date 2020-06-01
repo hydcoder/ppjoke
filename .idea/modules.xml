@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libnavannotation/libnavannotation.iml" filepath="$PROJECT_DIR$/libnavannotation/libnavannotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libnavcompiler/libnavcompiler.iml" filepath="$PROJECT_DIR$/libnavcompiler/libnavcompiler.iml" />
       <module fileurl="file://$PROJECT_DIR$/ppjoke.iml" filepath="$PROJECT_DIR$/ppjoke.iml" />
     </modules>
   </component>
