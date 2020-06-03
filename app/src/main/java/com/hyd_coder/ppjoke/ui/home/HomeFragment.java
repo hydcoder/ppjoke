@@ -15,7 +15,7 @@ import androidx.lifecycle.ViewModelProviders;
 import com.hyd_coder.libnavannotationa.FragmentDestination;
 import com.hyd_coder.ppjoke.R;
 
-@FragmentDestination(pageUrl = "/main/tabs/home", asStarter = true)
+@FragmentDestination(pageUrl = "main/tabs/home", asStarter = true)
 public class HomeFragment extends Fragment {
 
     private HomeViewModel homeViewModel;

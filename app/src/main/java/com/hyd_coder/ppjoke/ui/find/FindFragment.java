@@ -1,4 +1,4 @@
-package com.hyd_coder.ppjoke.ui.dashboard;
+package com.hyd_coder.ppjoke.ui.find;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -15,18 +15,18 @@ import androidx.lifecycle.ViewModelProviders;
 import com.hyd_coder.libnavannotationa.FragmentDestination;
 import com.hyd_coder.ppjoke.R;
 
-@FragmentDestination(pageUrl = "/main/tabs/dashBoard", asStarter = false)
-public class DashboardFragment extends Fragment {
+@FragmentDestination(pageUrl = "main/tabs/find")
+public class FindFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private FindViewModel mFindViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(this, new Observer<String>() {
+        mFindViewModel =
+                ViewModelProviders.of(this).get(FindViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_notifications, container, false);
+        final TextView textView = root.findViewById(R.id.text_notifications);
+        mFindViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

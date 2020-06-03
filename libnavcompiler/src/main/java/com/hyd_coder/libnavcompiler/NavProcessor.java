@@ -83,7 +83,7 @@ public class NavProcessor extends AbstractProcessor {
                 // StandardLocation.CLASS_PATH 和 StandardLocation.SOURCE_PATH用的不多，指定了这个参数，就要指定生成文件的pkg包名了
                 FileObject resource = mFiler.createResource(StandardLocation.CLASS_OUTPUT, "", OUTPUT_FILE_NAME);
                 String resourcePath = resource.toUri().getPath();
-                mMessager.printMessage(Diagnostic.Kind.ERROR, "resourcePath:" + resourcePath);
+                mMessager.printMessage(Diagnostic.Kind.NOTE, "resourcePath:" + resourcePath);
 
                 // 由于我们想要把json文件生成在app/src/main/assets/目录下,所以这里可以对字符串做一个截取，
                 // 以此便能准确获取项目在每个电脑上的 /app/src/main/assets/的路径
@@ -101,6 +101,8 @@ public class NavProcessor extends AbstractProcessor {
                 if (outputFile.exists()) {
                     outputFile.delete();
                 }
+                outputFile.createNewFile();
+
                 // 利用fastJson把收集到的所有的页面信息 转换成JSON格式的。并输出到文件中
                 String content = JSON.toJSONString(destMap);
                 fos = new FileOutputStream(outputFile);
