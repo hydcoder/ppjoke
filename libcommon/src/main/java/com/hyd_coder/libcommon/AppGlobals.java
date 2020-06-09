@@ -1,4 +1,4 @@
-package com.hyd_coder.ppjoke.utils;
+package com.hyd_coder.libcommon;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
