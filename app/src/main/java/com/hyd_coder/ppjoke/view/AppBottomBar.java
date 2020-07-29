@@ -1,4 +1,4 @@
-package com.hyd_coder.ppjoke.ui.view;
+package com.hyd_coder.ppjoke.view;
 
 import android.annotation.SuppressLint;
 import android.content.Context;

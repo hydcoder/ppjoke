@@ -15,7 +15,7 @@ public class AppGlobals {
 
     private static Application sApplication;
 
-    public static Application getAppication() {
+    public static Application getApplication() {
         if (sApplication == null) {
             try {
                 @SuppressLint({"DiscouragedPrivateApi", "PrivateApi"})
